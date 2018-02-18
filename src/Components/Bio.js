@@ -1,11 +1,6 @@
 import React from 'react';
 import { Card, Icon, Feed } from 'semantic-ui-react';
 
-const description = [
-    'Ren is a passionate full-stack web developer with a B.S. in IT.',
-    'Experienced ',
-  ].join(' ')
-
 const Bio = () => {
     return (
         <Card fluid>

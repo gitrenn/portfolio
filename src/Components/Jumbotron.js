@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Grid, Image, Divider } from 'semantic-ui-react';
 import Message from 'semantic-ui-react/dist/commonjs/collections/Message/Message';
-
+import ProPic from '../ren_panda.jpg';
 
 
 const Jumbotron = () => {
@@ -11,7 +11,7 @@ const Jumbotron = () => {
                 <Grid stackable columns={4}>
                     <Grid.Column></Grid.Column>
                     <Grid.Column >
-                        <Image centered size='small' src='/assets/images/ren_panda.jpg' circular/>
+                        <Image centered size='small' src={ProPic} circular/>
                         
                     </Grid.Column>
                     <Grid.Column>
