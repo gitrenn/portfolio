@@ -1,16 +1,11 @@
 import React from 'react';
 import { Card, Icon, Feed } from 'semantic-ui-react';
 
-const description = [
-    'Ren is a passionate full-stack web developer with a B.S. in IT.',
-    'Experienced ',
-  ].join(' ')
-
-const Bio = () => {
+const Exp3 = () => {
     return (
         <Card fluid>
     <Card.Content>
-      <Card.Header>Full-Stack Web Developer</Card.Header>
+      <Card.Header>Web Application Developer</Card.Header>
     </Card.Content>
     <Card.Content>
     <Feed>
@@ -19,7 +14,7 @@ const Bio = () => {
             <Icon name='add' />
           </Feed.Label>
           <Feed.Content>
-            Co-led the frontend development using JavaScript/jQuery/AJAX/Materialize for a location-based job search web application
+          Collaborated with teammates to plan and execute projects using Agile Scrum methodologies for clients
           </Feed.Content>
         </Feed.Event>
 
@@ -28,7 +23,7 @@ const Bio = () => {
             <Icon name='add' />
           </Feed.Label>
           <Feed.Content>
-            Developed the backend and database with Node.js, Express.js and MySQL for a web app to search for local dispensaries and their products
+          Contributed to the backend development of a new website for Ascend at SIU, using C# and .Net Core to build the environment, Git for version control, and VisualStudioTeamServices for team collaboration
           </Feed.Content>
         </Feed.Event>
 
@@ -37,7 +32,7 @@ const Bio = () => {
             <Icon name='add' />
           </Feed.Label>
           <Feed.Content>
-            Contributed to the full-stack development of various features for a gift-giving web app using React, Node.js, Express, MySQL and Semantic-UI
+          Designed a new website for the Dental Hygiene department with WordPress, produced user manuals, and performed training on the website’s new functionalities
           </Feed.Content>
         </Feed.Event>
       </Feed>
@@ -46,4 +41,4 @@ const Bio = () => {
     )
 }
 
-export default Bio;
+export default Exp3;

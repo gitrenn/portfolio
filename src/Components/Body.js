@@ -1,6 +1,8 @@
 import React from 'react';
-import { Segment, Tab, Label, Icon } from 'semantic-ui-react';
-
+import { Segment, Tab, Label, Icon, Grid } from 'semantic-ui-react';
+import Bio from './Bio';
+import Exp2 from './Exp2';
+import Exp3 from './Exp3';
 
 const about = [
     {
@@ -12,7 +14,29 @@ const about = [
 ]
 
 const experience = [
-    { menuItem: 'experience', render: () => <Tab.Pane><Label ribbon color='blue'></Label>Please visit links below to get more information</Tab.Pane> }
+    { menuItem: 'Experience', render: () => (
+        <Tab.Pane>
+            <Label ribbon color='blue' />
+            <Grid stackable columns={3}>
+                <Grid.Column>
+                    <Icon name='laptop'>
+                        <p>Coding Bootcamp UCI Continuing Education</p>
+                    </Icon>
+                </Grid.Column>
+                <Grid.Column>
+                    <Icon name='student'>
+                        <p>SIU Student Web Development Team</p>
+                    </Icon>
+                </Grid.Column>
+                <Grid.Column>
+                    <Icon name='hospital'>
+                        <p>Southern Illinois Healthcare</p>
+                    </Icon>
+                </Grid.Column>
+            </Grid>
+            
+        </Tab.Pane>
+    ) }
 ]
 
 const contact = [
@@ -20,8 +44,8 @@ const contact = [
         <Label ribbon color='blue'></Label>
         <a href='https://www.linkedin.com/in/ren-jing-2372b81b/'><Icon name='linkedin' size='huge'/></a>
         <a href='https://github.com/gitrenn'><Icon name='github' size='huge'/></a>
-        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><Icon name='mail' size='huge' /></a>
-      
+        <a href="mailto:rjingmembers@gmail.com?Subject=Hello%20again" target="_top"><Icon name='mail' size='huge' /></a>
+
         </Tab.Pane> }
 ]
 
@@ -36,7 +60,18 @@ const Body = () => {
             <Segment>
 
                 <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={experience} />
-
+                <Grid stackable columns={3}>
+                <Grid.Column>
+                    
+                    <Bio />
+                </Grid.Column>
+                <Grid.Column>
+                    <Exp2 />
+                </Grid.Column>
+                <Grid.Column>
+                    <Exp3 />
+                </Grid.Column>
+            </Grid>
             </Segment>
             <Segment>
 

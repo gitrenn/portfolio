@@ -1,16 +1,11 @@
 import React from 'react';
 import { Card, Icon, Feed } from 'semantic-ui-react';
 
-const description = [
-    'Ren is a passionate full-stack web developer with a B.S. in IT.',
-    'Experienced ',
-  ].join(' ')
-
-const Bio = () => {
+const Exp2 = () => {
     return (
         <Card fluid>
     <Card.Content>
-      <Card.Header>Full-Stack Web Developer</Card.Header>
+      <Card.Header>Business Intelligence Intern</Card.Header>
     </Card.Content>
     <Card.Content>
     <Feed>
@@ -19,7 +14,7 @@ const Bio = () => {
             <Icon name='add' />
           </Feed.Label>
           <Feed.Content>
-            Co-led the frontend development using JavaScript/jQuery/AJAX/Materialize for a location-based job search web application
+          Supported BI analysts in the development of BI infrastructure, delivering customized solutions for customers within the healthcare environment
           </Feed.Content>
         </Feed.Event>
 
@@ -28,7 +23,7 @@ const Bio = () => {
             <Icon name='add' />
           </Feed.Label>
           <Feed.Content>
-            Developed the backend and database with Node.js, Express.js and MySQL for a web app to search for local dispensaries and their products
+          Created geo-analytical applications using QlikView, Idevio map and Google Map API in a test environment, allowing doctors to evaluate correlations between patient diagnostics and place of residence
           </Feed.Content>
         </Feed.Event>
 
@@ -37,7 +32,7 @@ const Bio = () => {
             <Icon name='add' />
           </Feed.Label>
           <Feed.Content>
-            Contributed to the full-stack development of various features for a gift-giving web app using React, Node.js, Express, MySQL and Semantic-UI
+          Deployed part of the tracking systems for medical devices linked to the EMR System
           </Feed.Content>
         </Feed.Event>
       </Feed>
@@ -46,4 +41,4 @@ const Bio = () => {
     )
 }
 
-export default Bio;
+export default Exp2;
