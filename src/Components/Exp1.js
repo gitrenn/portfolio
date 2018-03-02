@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Icon, Feed } from 'semantic-ui-react';
 
-const Bio = () => {
+const Exp1 = () => {
     return (
         <Card fluid>
     <Card.Content>
@@ -41,4 +41,4 @@ const Bio = () => {
     )
 }
 
-export default Bio;
+export default Exp1;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Segment, Tab, Label, Icon, Grid } from 'semantic-ui-react';
-import Bio from './Bio';
+import Exp1 from './Exp1';
 import Exp2 from './Exp2';
 import Exp3 from './Exp3';
 
@@ -39,31 +39,19 @@ const experience = [
     ) }
 ]
 
-const contact = [
-    { menuItem: 'Contact Me', render: () => <Tab.Pane>
-        <Label ribbon color='blue'></Label>
-        <a href='https://www.linkedin.com/in/ren-jing-2372b81b/'><Icon name='linkedin' size='huge'/></a>
-        <a href='https://github.com/gitrenn'><Icon name='github' size='huge'/></a>
-        <a href="mailto:rjingmembers@gmail.com?Subject=Hello%20again" target="_top"><Icon name='mail' size='huge' /></a>
 
-        </Tab.Pane> }
-]
 
 const Body = () => {
     return (
         <div>
-            <Segment>
-
+            <Segment vertical>
                 <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={about} />
-
             </Segment>
-            <Segment>
-
+            <Segment vertical>
                 <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={experience} />
                 <Grid stackable columns={3}>
-                <Grid.Column>
-                    
-                    <Bio />
+                <Grid.Column>    
+                    <Exp1 />
                 </Grid.Column>
                 <Grid.Column>
                     <Exp2 />
@@ -71,12 +59,7 @@ const Body = () => {
                 <Grid.Column>
                     <Exp3 />
                 </Grid.Column>
-            </Grid>
-            </Segment>
-            <Segment>
-
-                <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={contact} />
-
+                </Grid>
             </Segment>
         </div>
     )

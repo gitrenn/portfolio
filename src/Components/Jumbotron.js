@@ -1,13 +1,12 @@
 import React from 'react';
-import { Header, Grid, Image, Divider } from 'semantic-ui-react';
-import Message from 'semantic-ui-react/dist/commonjs/collections/Message/Message';
+import { Header, Grid, Image, Divider, Segment } from 'semantic-ui-react';
 import ProPic from '../ren_panda.jpg';
 
 
 const Jumbotron = () => {
     return (
-        <div>
-            <Message>
+        <div style={{background: '#2185d0'}}>
+            <Segment vertical styles={{padding: '8em 0em'}}>
                 <Grid stackable columns={4}>
                     <Grid.Column></Grid.Column>
                     <Grid.Column >
@@ -15,17 +14,17 @@ const Jumbotron = () => {
                         
                     </Grid.Column>
                     <Grid.Column>
-                      <Header as='h1' icon textAlign='center' >
+                      <Header as='h1' icon textAlign='center' style={{color:'white', textTransform:'uppercase'}}>
                             Ren Jing
                         </Header>
                         <Divider section />
-                        <Header as='h2' icon textAlign='center' color='blue'>
+                        <Header as='h2' icon textAlign='center' style={{color:'white'}}>
                             Full-Stack Web Developer
                         </Header> 
                     </Grid.Column>
                     <Grid.Column></Grid.Column>
                 </Grid>
-            </Message>
+            </Segment>
         </div>
     )
 }
