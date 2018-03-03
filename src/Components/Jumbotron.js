@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Grid, Image, Divider, Segment } from 'semantic-ui-react';
-import ProPic from '../ren_panda.jpg';
+import ProPic from '../Images/ren_panda.jpg';
 
 
 const Jumbotron = () => {
