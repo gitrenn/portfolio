@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react';
-import cannabuddy from '../Images/cannabuddy.png';
-import codeJob from '../Images/codeJob.png';
-import crystalCollector from '../Images/crystalCollector.png';
-import gifTastic from '../Images/gifTastic.png';
-import giftReview from '../Images/giftReview.png';
+
 
 export default class Portfolio extends Component {
     
 
     render() {
         return (
+            <Card.Group >
             <Card>
                 <Image src={this.props.canna_src}/>
                 <Card.Content>
@@ -23,6 +20,7 @@ export default class Portfolio extends Component {
                 </Card.Description>
                 </Card.Content>
             </Card>
+            </Card.Group>
         )
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Tab, Label, Icon, Grid, Container } from 'semantic-ui-react';
+import { Segment, Tab, Label, Icon, Grid } from 'semantic-ui-react';
 import Exp1 from './Exp1';
 import Exp2 from './Exp2';
 import Exp3 from './Exp3';
