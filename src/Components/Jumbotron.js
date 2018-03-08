@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 const Jumbotron = () => {
     return (
         <div>
-            <Segment  >
+            <Segment>
                 <Grid stackable columns={4}>
                     <Grid.Column></Grid.Column>
                     <Grid.Column >
