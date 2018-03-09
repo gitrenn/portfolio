@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Tab, Label, Icon, Grid } from 'semantic-ui-react';
+import { Segment, Tab, Label, Icon, Grid, Card } from 'semantic-ui-react';
 import Exp1 from './Exp1';
 import Exp2 from './Exp2';
 import Exp3 from './Exp3';
@@ -108,7 +108,7 @@ const Body = () => {
             <Segment vertical>
                 <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={experience} />
                 <Segment>
-                <Grid stackable columns={3}>
+                {/* <Grid stackable columns={3}>
                 <Grid.Column>    
                     <Exp1 />
                 </Grid.Column>
@@ -118,7 +118,12 @@ const Body = () => {
                 <Grid.Column>
                     <Exp3 />
                 </Grid.Column>
-                </Grid>
+                </Grid> */}
+                <Card.Group>
+                    <Exp1 />
+                    <Exp2 />
+                    <Exp3 />
+                </Card.Group>
                 </Segment>
             </Segment>
         </div>

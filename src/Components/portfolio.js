@@ -7,7 +7,7 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <Card.Group >
+            <Card.Group>
             <Card>
                 <Image src={this.props.canna_src}/>
                 <Card.Content>

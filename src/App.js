@@ -15,7 +15,7 @@ class App extends Component {
         <Sticky >
         <Jumbotron/>
         </Sticky>
-        <Container style={{ position: 'relative', zIndex: '-1'}}>
+        <Container style={{ position: 'relative', zIndex: '-1', background: '#fafbfc'}}>
           <Body />
         </Container>
         <Footer />
