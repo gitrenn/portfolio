@@ -3,7 +3,7 @@ import { Card, Icon, Feed } from 'semantic-ui-react';
 
 const Exp2 = () => {
     return (
-        <Card fluid>
+        <Card >
     <Card.Content>
       <Card.Header>Business Intelligence Intern</Card.Header>
     </Card.Content>

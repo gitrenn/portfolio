@@ -1,16 +1,9 @@
-import React from 'react';
-import { Segment, Tab, Label, Icon, Grid, Card } from 'semantic-ui-react';
-import Portfolio from './Projects';
-import About from './About';
-import Experience from './Experience';
+import React from 'react'; 
+import { Segment, Grid, Label, Icon } from 'semantic-ui-react';
 
-import './Views.css';
-
-const experience = [
-    {
-        menuItem: 'Experience', render: () => (
-            <Tab.Pane>
-                <Label ribbon color='blue' />
+const ExpSegment = () => {
+    return (
+                <Segment attached>
                 <Grid stackable columns={3}>
                     <Grid.Column>
                         <Icon name='laptop'>
@@ -28,20 +21,8 @@ const experience = [
                         </Icon>
                     </Grid.Column>
                 </Grid>
-            </Tab.Pane>
-        )
-    }
-]
-
-const Body = () => {
-    return (
-        <div>
-            <About />         
-            <Portfolio />
-            <Experience />
-          
-        </div>
+                </Segment>     
     )
 }
 
-export default Body;
+export default ExpSegment;

@@ -3,7 +3,6 @@ import './App.css';
 import Jumbotron from './Components/Jumbotron';
 import Body from './Views/Body';
 import Footer from './Components/Footer';
-import About from './Views/About';
 
 import { Container } from 'semantic-ui-react';
 import Sticky from 'react-sticky-el';
@@ -21,7 +20,6 @@ class App extends Component {
         </Sticky>
         <div style={{ position: 'relative', zIndex: '-1', background: '#fafbfc'}}>
           <Container >
-            <About style={styles}/>
             <Body />
           </Container>
         </div>
