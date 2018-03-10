@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Jumbotron from './Components/Jumbotron';
-import Body from './Components/Body';
+import Body from './Views/Body';
 import Footer from './Components/Footer';
+import About from './Views/About';
 
 import { Container } from 'semantic-ui-react';
 import Sticky from 'react-sticky-el';
 
+const styles = {
+  fontFamily: "Lato', sans-serif"
+}
 
 class App extends Component {
   render() {
@@ -15,9 +19,12 @@ class App extends Component {
         <Sticky >
         <Jumbotron/>
         </Sticky>
-        <Container style={{ position: 'relative', zIndex: '-1', background: '#fafbfc'}}>
-          <Body />
-        </Container>
+        <div style={{ position: 'relative', zIndex: '-1', background: '#fafbfc'}}>
+          <Container >
+            <About style={styles}/>
+            <Body />
+          </Container>
+        </div>
         <Footer />
       </div>
     );

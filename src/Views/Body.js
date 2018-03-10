@@ -1,9 +1,9 @@
 import React from 'react';
 import { Segment, Tab, Label, Icon, Grid, Card } from 'semantic-ui-react';
-import Exp1 from './Exp1';
-import Exp2 from './Exp2';
-import Exp3 from './Exp3';
-import Portfolio from './portfolio';
+import Exp1 from '../Components/Exp1';
+import Exp2 from '../Components/Exp2';
+import Exp3 from '../Components/Exp3';
+import Portfolio from './Projects';
 
 import cannabuddy from '../Images/cannabuddy.png';
 import codeJob from '../Images/codeJob.png';
@@ -96,15 +96,52 @@ const experience = [
 const Body = () => {
     return (
         <div>
-            <Segment vertical>
+            {/* <Segment vertical>
                 <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={about} />
             </Segment>
+             */}
             
-            <Segment vertical>  
-                <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={portfolio} />
-                
+            <Segment attached='top' style={{marginTop:'40px'}}><Label ribbon color='blue'>Projects</Label></Segment>
+            <Segment attached>
+            <Grid stackable columns={5}>
+                <Grid.Column>    
+                    <Portfolio 
+                        canna_title='CannaBuddy'
+                        canna_src={cannabuddy}
+                        canna_git='https://github.com/Tech-Creme-Brulee/Creme-Brulee-Project'
+                        canna_demo='https://cannabuddy.herokuapp.com/'/>
+                </Grid.Column>
+                <Grid.Column>
+                <Portfolio 
+                        canna_title='CrystalGame'
+                        canna_src={crystalCollector}
+                        canna_git='https://github.com/Tech-Creme-Brulee/CrystalsCollectorGame'
+                        canna_demo='https://cannabuddy.herokuapp.com/'/>
+                </Grid.Column>
+                <Grid.Column>
+                <Portfolio 
+                        canna_title='GiftReview'
+                        canna_src={giftReview}
+                        canna_git='https://github.com/gitrenn/wishlist_product_review'
+                        canna_demo='https://gitrenn.github.io/wishlist_product_review/'/>
+                </Grid.Column>
+                <Grid.Column>
+                <Portfolio 
+                        canna_title='GifTastic'
+                        canna_src={gifTastic}
+                        canna_git='https://github.com/gitrenn/GifTastic'
+                        canna_demo='https://gitrenn.github.io/GifTastic/'/>
+                </Grid.Column>
+                <Grid.Column>
+                <Portfolio 
+                        canna_title='CodeJob'
+                        canna_src={codeJob}
+                        canna_git='https://github.com/safemoveapp/code-job-app'
+                        canna_demo='https://safemoveapp.github.io/code-job-app/'/>
+                </Grid.Column>
+                </Grid>
             </Segment>
-
+             
             <Segment vertical>
                 <Tab menu={{ fluid: true, vertical: true, tabular: 'right' }} panes={experience} />
                 <Segment>
