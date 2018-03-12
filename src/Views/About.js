@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Label, Icon } from 'semantic-ui-react';
+import { Segment, Label } from 'semantic-ui-react';
 
 import './Views.css';
 

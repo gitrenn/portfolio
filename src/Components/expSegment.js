@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Segment, Grid, Label, Icon } from 'semantic-ui-react';
+import { Segment, Grid, Icon } from 'semantic-ui-react';
 
 const ExpSegment = () => {
     return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import { Segment, Label, Icon, Card, Responsive } from 'semantic-ui-react';
+import { Segment, Label, Card, Responsive } from 'semantic-ui-react';
 import ExpSegment from '../Components/expSegment';
 import Exp1 from '../Components/Exp1';
 import Exp2 from '../Components/Exp2';

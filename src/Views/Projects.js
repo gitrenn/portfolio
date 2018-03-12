@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image, Grid, Label, Segment, Responsive } from 'semantic-ui-react';
+import { Card, Label, Segment, Responsive } from 'semantic-ui-react';
 import ProjectCard from '../Components/projectCard';
 import cannabuddy from '../Images/cannabuddy.png';
 import codeJob from '../Images/codeJob.png';
@@ -12,19 +12,25 @@ import './Views.css';
 
 
 export default class Portfolio extends Component {
-    state = {}
+    state = {};
+
+    handleOnUpdate = (e, { width }) => this.setState({ width });
 
     render() {
-        const width = Responsive.onlyComputer.minWidth;
-        console.log(width);
+        const { width } = this.state;
+        const itemsPerRow = width >= Responsive.onlyComputer.minWidth ? 3 : 1;
 
         return (
             <div className='bodySection'>
                 <Segment attached='top' className='label-segment'>
                     <Label ribbon color='blue'>Projects</Label>
                 </Segment>
-                <Segment attached='bottom'>
-                    <Card.Group itemsPerRow={1}>
+                <Responsive 
+                    as={Segment}
+                    attached='bottom'
+                    fireOnMount
+                    onUpdate={this.handleOnUpdate}>
+                    <Card.Group itemsPerRow={itemsPerRow}>
                         <ProjectCard 
                             title='CannaBuddy'
                             src={cannabuddy}
@@ -55,7 +61,7 @@ export default class Portfolio extends Component {
                                 git='https://github.com/safemoveapp/code-job-app'
                                 demo='https://safemoveapp.github.io/code-job-app/'/>
                     </Card.Group>
-                </Segment>
+                </Responsive>
             </div>
         )
     }
