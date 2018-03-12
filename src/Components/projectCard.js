@@ -8,18 +8,12 @@ export default class Portfolio extends Component {
         return (
 
             <Card color='blue'>
-                <Card.Header>
-                    {this.props.title}
-                </Card.Header>
+            <Card.Content header={this.props.title} />
+            
                 <Image src={this.props.src}/>
-                <Card.Content>
-                <Card.Description>
-                    
-                </Card.Description>
-                <Card.Description>
-                    <a href={this.props.git} target="_blank"><Icon name='github'  loading/></a>
-                    <a href={this.props.demo} target="_blank"><Icon name='external'  /></a>
-                </Card.Description>
+                <Card.Content extra>
+                    <a href={this.props.git} target="_blank" rel="noopener noreferrer"><Icon name='github'  loading/></a>
+                    <a href={this.props.demo} target="_blank" rel="noopener noreferrer"><Icon name='external'  /></a>
                 </Card.Content>
             </Card>
             

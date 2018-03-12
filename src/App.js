@@ -14,11 +14,13 @@ const styles = {
 class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <Sticky >
+      <div className='App' style={{ background: '#fafbfc'}}>
+        <div className='headerDiv'>
+        <Sticky>
         <Jumbotron/>
         </Sticky>
-        <div style={{ position: 'relative', zIndex: '-1', background: '#fafbfc'}}>
+        </div>
+        <div className='bodyDiv'>
           <Container >
             <Body />
           </Container>

@@ -6,7 +6,7 @@ import './Views.css';
 const About = () => {
     return (
         <div className='bodySection'>
-            <Segment attached='top'>
+            <Segment attached='top' className='label-segment'>
             <Label ribbon color='blue'>About</Label>
             </Segment>
             <Segment attached='bottom'>

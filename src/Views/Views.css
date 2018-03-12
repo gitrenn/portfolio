@@ -1,3 +1,7 @@
 .bodySection {
     margin-top: 40px;
 }
+
+.label-segment {
+    padding: 8px !important;
+}
