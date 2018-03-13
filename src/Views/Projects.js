@@ -3,7 +3,7 @@ import { Card, Label, Segment, Responsive } from 'semantic-ui-react';
 import ProjectCard from '../Components/projectCard';
 import cannabuddy from '../Images/cannabuddy.png';
 import codeJob from '../Images/codeJob.png';
-import crystalCollector from '../Images/crystallCollector.png';
+import crystalCollector from '../Images/crystalCollector.png';
 import gifTastic from '../Images/gifTastic.png';
 import giftReview from '../Images/giftReview.png';
 
