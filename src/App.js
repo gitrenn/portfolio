@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Jumbotron from './Components/jumbotron';
+import Jumbotron from './Views/Header';
 import Body from './Views/Body';
 import Footer from './Views/Footer';
 
