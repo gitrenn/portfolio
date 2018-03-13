@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image, Divider, Label } from 'semantic-ui-react';
+import { Card, Icon, Image, Dropdown, Label, Segment } from 'semantic-ui-react';
 
 
 export default class Portfolio extends Component {
@@ -8,8 +8,19 @@ export default class Portfolio extends Component {
         return (
 
             <Card color='blue'>
-            <Card.Content header={this.props.title} />
-                <Image src={this.props.src}/>
+            <Image src={this.props.src}/>
+                <Card.Content>
+                <Dropdown text={this.props.title} labeled button>
+                    <Dropdown.Menu>
+                    <Dropdown.Header icon='idea' content={this.props.desc} />
+                    <Dropdown.Divider />
+                        <Segment vertical>
+                            <Icon name='code' />
+                            {this.props.tech}
+                        </Segment>
+                    </Dropdown.Menu>
+                </Dropdown>
+                </Card.Content>
                 <Card.Content extra>
                 <a href={this.props.git} target="_blank" rel="noopener noreferrer">
                     <Label>

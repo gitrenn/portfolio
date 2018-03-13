@@ -35,31 +35,42 @@ export default class Portfolio extends Component {
                             title='CannaBuddy'
                             src={cannabuddy}
                             git='https://github.com/Tech-Creme-Brulee/Creme-Brulee-Project'
-                            demo='https://cannabuddy.herokuapp.com/'/>
+                            demo='https://cannabuddy.herokuapp.com/'
+                            desc='Find that cannabis for you'
+                            tech='JavaScript, jQuery, Nodejs, MySQL, HTML, CSS, AJAX, Materialize'/>
+                            
                     
                         <ProjectCard 
                                 title='CrystalGame'
                                 src={crystalCollector}
                                 git='https://github.com/gitrenn/CrystalsCollectorGame'
-                                demo='https://cannabuddy.herokuapp.com/'/>
+                                demo='https://cannabuddy.herokuapp.com/'
+                                desc='A game of arithmetic'
+                                tech='JavaScript, jQuery, HTML, CSS, Bootstrap'/>
                         
                         <ProjectCard 
                                 title='GiftReview'
                                 src={giftReview}
                                 git='https://github.com/gitrenn/wishlist_product_review'
-                                demo='https://gitrenn.github.io/wishlist_product_review/'/>
+                                demo='https://gitrenn.github.io/wishlist_product_review/'
+                                desc='Review before you buy it'
+                                tech='React, Semantic-ui, YouTubeAPI'/>
                         
                         <ProjectCard 
                                 title='GifTastic'
                                 src={gifTastic}
                                 git='https://github.com/gitrenn/GifTastic'
-                                demo='https://gitrenn.github.io/GifTastic/'/>
+                                demo='https://gitrenn.github.io/GifTastic/'
+                                desc='Generate the gifs you want'
+                                tech='JavaScript, jQuery, HTML, CSS, Bootstrap, AJAX'/>
                         
                         <ProjectCard 
                                 title='CodeJob'
                                 src={codeJob}
                                 git='https://github.com/safemoveapp/code-job-app'
-                                demo='https://safemoveapp.github.io/code-job-app/'/>
+                                demo='https://safemoveapp.github.io/code-job-app/'
+                                desc='Locate that code job'
+                                tech='JavaScript, jQuery, Nodejs, HTML, CSS, AJAX, Materialize'/>
                     </Card.Group>
                 </Responsive>
             </div>
