@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Jumbotron from './Components/Jumbotron';
+import Jumbotron from './Components/jumbotron';
 import Body from './Views/Body';
-import Footer from './Components/Footer';
+import Footer from './Views/Footer';
 
 import { Container } from 'semantic-ui-react';
 import Sticky from 'react-sticky-el';
