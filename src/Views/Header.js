@@ -1,9 +1,9 @@
 import React from 'react';
-import { Header, Grid, Image, Divider, Segment, Label } from 'semantic-ui-react';
+import { Header, Grid, Image, Divider, Segment } from 'semantic-ui-react';
 import ProPic from '../Images/ren_panda.jpg';
 import Navbar from '../Components/Navbar';
 import Sidebar from '../Components/sidebar';
-import RJ from '../Images/ren_panda.jpg';
+
 
 const MyHeader = () => {
     return (

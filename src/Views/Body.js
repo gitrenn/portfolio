@@ -3,6 +3,7 @@ import React from 'react';
 import Portfolio from './Projects';
 import About from './About';
 import Experience from './Experience';
+import Tech from './Tech';
 
 import './Views.css';
 
@@ -11,7 +12,8 @@ const Body = () => {
         <div >
             <About />         
             <Portfolio />
-            <Experience /> 
+            <Experience />
+            <Tech /> 
         </div>
     )
 }
