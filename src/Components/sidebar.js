@@ -8,7 +8,7 @@ const Sidebar = () => (
       <Dropdown.Item>Projects</Dropdown.Item>
       <Dropdown.Item>Experience</Dropdown.Item>
       <Dropdown.Item>Tech</Dropdown.Item>
-      <Dropdown.Item>Contact</Dropdown.Item>
+      <Dropdown.Item>Connect</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
 )

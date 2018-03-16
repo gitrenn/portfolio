@@ -41,11 +41,11 @@ export default class MenuExampleStackable extends Component {
         </Menu.Item>
 
         <Menu.Item
-          name='contact'
-          active={activeItem === 'contact'}
+          name='connect'
+          active={activeItem === 'connect'}
           onClick={this.handleItemClick}
         >
-          Contact Me
+          Connect
         </Menu.Item>
         </Menu.Menu>
       </Menu>
