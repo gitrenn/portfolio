@@ -41,7 +41,7 @@ class MyHeader extends React.Component {
                                     <Sidebar />
                                 </Grid.Column>
                                 <Grid.Column textAlign='right'>
-                                    <a onClick={this.scrollToTop}>RJ</a>
+                                    <a onClick={this.scrollToTop}><b>RJ</b></a>
                                 </Grid.Column>
                         </Grid.Row>
                     </Grid>
