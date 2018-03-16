@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Link, animateScroll as scroll } from 'react-scroll';
- 
-const durationFn = function(deltaTop) {
-  return deltaTop;
-};
 
 export default class MenuExampleStackable extends Component {
   constructor(props){

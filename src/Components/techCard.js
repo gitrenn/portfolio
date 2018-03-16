@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Segment, Label, Card, Image } from 'semantic-ui-react';
+import React from 'react';
+import { Card, Image } from 'semantic-ui-react';
 
 import js from '../Images/Tech/javascript.png';
 import html from '../Images/Tech/html.png';
@@ -14,13 +14,14 @@ import sui from '../Images/Tech/semanticui.png';
 import bs from '../Images/Tech/bootstrap.png';
 
 const TechList = [
-    {title: 'JavaScript', src: js },
-    {title: 'HTML', src: html },
-    {title: 'CSS', src: css },
     {title: 'MongoBD', src:mongo },
     {title: 'Express', src: express },
     {title: 'React', src: reactSrc },
     {title: 'Node', src: node },
+    {title: 'jQuery', src: jquery},
+    {title: 'JavaScript', src: js },
+    {title: 'HTML', src: html },
+    {title: 'CSS', src: css }, 
     {title: 'Java', src: java },
     {title: 'Semantic-UI', src: sui },
     {title: 'Bootstrap', src: bs }
