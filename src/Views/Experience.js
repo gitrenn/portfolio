@@ -5,6 +5,8 @@ import Exp1 from '../Components/Exp1';
 import Exp2 from '../Components/Exp2';
 import Exp3 from '../Components/Exp3';
 import './Views.css';
+import { Element } from 'react-scroll';
+
 
 
 class Experience extends Component {
@@ -17,9 +19,11 @@ class Experience extends Component {
         const itemsPerRow = width >= Responsive.onlyComputer.minWidth ? 3 : 1;
         return (
             <div className='bodySection'>
-                <Segment attached='top' className='label-segment'>
-                    <Label ribbon color='blue'>Experience</Label>
-                </Segment>
+                <Element name='experience'>
+                    <Segment attached='top' className='label-segment'>
+                        <Label ribbon color='blue'>Experience</Label>
+                    </Segment>
+                </Element>
                 <ExpSegment />
                 <Responsive
                     as={Segment}
