@@ -12,9 +12,7 @@ class Body extends React.Component {
     render() {
         return (
             <div >
-                <Element 
-                    name='about'
-                    style={{ marginBottom: 30}}>         
+                <Element name='about'>         
                     <About />
                 </Element>
                 <Element name='projects'>         
