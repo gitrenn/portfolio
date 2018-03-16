@@ -62,7 +62,7 @@ export default class MenuExampleStackable extends Component {
           active={activeItem === 'tech'}
           onClick={this.handleItemClick}
         >
-          <Link activeClass="active" className="tech" to="tech" spy={true} smooth={true} duration={500} >
+          <Link activeClass="active" className="tech" to="tech" spy={true} smooth={true} offset={-200} duration={500} >
             Technologies
           </Link>
         </Menu.Item>
