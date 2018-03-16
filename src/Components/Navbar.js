@@ -101,7 +101,9 @@ export default class MenuExampleStackable extends Component {
           active={activeItem === 'connect'}
           onClick={this.handleItemClick}
         >
-          Connect
+          <a onClick={() => scroll.scrollToBottom()}>
+            Connect
+          </a>
         </Menu.Item>
         </Menu.Menu>
       </Menu>
