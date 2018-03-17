@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Label, Grid, Image, Card } from 'semantic-ui-react';
+import { Segment, Label, Card } from 'semantic-ui-react';
 import TechCard from '../Components/techCard';
 
 

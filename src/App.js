@@ -9,6 +9,10 @@ import Sticky from 'react-sticky-el';
 
 
 class App extends Component {
+  componentDidMount(){
+    document.title = "Ren Jing"
+  }
+
   render() {
     return (
       <div className='App' style={{ background: '#fafbfc'}}>

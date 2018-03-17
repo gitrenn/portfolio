@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
+import { Menu, Button, Icon } from 'semantic-ui-react'
 import { Link, animateScroll as scroll } from 'react-scroll';
- 
-const durationFn = function(deltaTop) {
-  return deltaTop;
-};
 
 export default class MenuExampleStackable extends Component {
   constructor(props){
     super(props);
-    this.state = {}
 
     this.scrollToTop = this.scrollToTop.bind(this);
 
@@ -19,63 +14,47 @@ export default class MenuExampleStackable extends Component {
     scroll.scrollToTop();
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
   render() {
-    const { activeItem } = this.state
 
     return (
-      <Menu stackable secondary>
-        <Menu.Item>
-          <a onClick={this.scrollToTop}><b>RJ</b></a>
+      <Menu secondary>
+        <Menu.Item className='about'>
+          <a onClick={this.scrollToTop}>
+            <Button animated='fade' primary>
+              <Button.Content visible>RJ</Button.Content>
+              <Button.Content hidden>
+                <Icon name='home' size='mini'/>
+              </Button.Content>
+            </Button>
+          </a>
         </Menu.Item>
 
         <Menu.Menu position='right'>
-        <Menu.Item
-          name='about'
-          active={activeItem === 'about'}
-          onClick={this.handleItemClick}
-        >
-          <Link activeClass="active" className="about" to="about" spy={true} smooth={true} offset={-200} duration={500} >
+        <Menu.Item className='about'>
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={-200} duration={500} >
             About
           </Link>
         </Menu.Item>
 
-        <Menu.Item
-          name='portfolio'
-          active={activeItem === 'portfolio'}
-          onClick={this.handleItemClick}
-        >
-          <Link activeClass="active" className="projects" to="projects" spy={true} smooth={true} offset={-200} duration={500} >
+        <Menu.Item className='portfolio'>
+          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-200} duration={500} >
             Projects
           </Link>
         </Menu.Item>
 
-        <Menu.Item
-          name='experience'
-          active={activeItem === 'experience'}
-          onClick={this.handleItemClick}
-        >
-          <Link activeClass="active" className="experience" to="experience" spy={true} smooth={true} offset={-210} duration={500} >
+        <Menu.Item className='experience'>
+          <Link activeClass="active" to="experience" spy={true} smooth={true} offset={-210} duration={500} >
             Experience
           </Link>
         </Menu.Item>
 
-        <Menu.Item
-          name='tech'
-          active={activeItem === 'tech'}
-          onClick={this.handleItemClick}
-        >
-          <Link activeClass="active" className="tech" to="tech" spy={true} smooth={true} duration={500} >
+        <Menu.Item className='tech'>
+          <Link activeClass="active" to="tech" spy={true} smooth={true} offset={-200} duration={500} >
             Technologies
           </Link>
         </Menu.Item>
 
-        <Menu.Item
-          name='connect'
-          active={activeItem === 'connect'}
-          onClick={this.handleItemClick}
-        >
+        <Menu.Item className='connect'>
           <a onClick={() => scroll.scrollToBottom()}>
             Connect
           </a>

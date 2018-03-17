@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Segment, Label, Card, Image } from 'semantic-ui-react';
+import React from 'react';
+import { Card, Image } from 'semantic-ui-react';
 
 import js from '../Images/Tech/javascript.png';
 import html from '../Images/Tech/html.png';
@@ -12,18 +12,26 @@ import node from '../Images/Tech/nodejs.png';
 import mongo from '../Images/Tech/mongodb.jpg';
 import sui from '../Images/Tech/semanticui.png';
 import bs from '../Images/Tech/bootstrap.png';
+import mysql from '../Images/Tech/mysql.png';
+import cs from '../Images/Tech/cs.png';
+import git from '../Images/Tech/git.png';
 
 const TechList = [
-    {title: 'JavaScript', src: js },
-    {title: 'HTML', src: html },
-    {title: 'CSS', src: css },
     {title: 'MongoBD', src:mongo },
     {title: 'Express', src: express },
     {title: 'React', src: reactSrc },
     {title: 'Node', src: node },
-    {title: 'Java', src: java },
+    {title: 'MySQL', src: mysql},
+    {title: 'JavaScript', src: js },
+    {title: 'HTML', src: html },
+    {title: 'CSS', src: css }, 
+    {title: 'jQuery', src: jquery},
+    {title: 'Git', src: git},
+    {title: 'Bootstrap', src: bs },
     {title: 'Semantic-UI', src: sui },
-    {title: 'Bootstrap', src: bs }
+    {title: 'Java', src: java },
+    {title: 'CS', src: cs}
+    
 ]
 
 
