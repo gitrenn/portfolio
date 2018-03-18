@@ -1,24 +1,33 @@
 import React from 'react'; 
-import { Segment, Grid, Icon } from 'semantic-ui-react';
+import { Segment, Grid, Icon, Header } from 'semantic-ui-react';
 
 const ExpSegment = () => {
     return (
-                <Segment attached>
+                <Segment attached textAlign='center'>
                 <Grid stackable columns={3}>
                     <Grid.Column>
-                        <Icon name='laptop'>
-                            <p>Coding Bootcamp UCI Continuing Education</p>
-                        </Icon>
+                        <Grid.Row>
+                        <Icon name='laptop' />    
+                        </Grid.Row>
+                        <Grid.Row>
+                        <b>Coding Bootcamp UCI Continuing Education</b>  
+                        </Grid.Row>
                     </Grid.Column>
                     <Grid.Column>
-                        <Icon name='student'>
-                            <p>SIU Student Web Development Team</p>
-                        </Icon>
+                        <Grid.Row>
+                        <Icon name='student' />    
+                        </Grid.Row>
+                        <Grid.Row>
+                        <b>SIU Student Web Development Team</b>  
+                        </Grid.Row>
                     </Grid.Column>
                     <Grid.Column>
-                        <Icon name='hospital'>
-                            <p>Southern Illinois Healthcare</p>
-                        </Icon>
+                        <Grid.Row>
+                        <Icon name='hospital' />    
+                        </Grid.Row>
+                        <Grid.Row>
+                        <b>Southern Illinois Healthcare</b>  
+                        </Grid.Row>
                     </Grid.Column>
                 </Grid>
                 </Segment>     
