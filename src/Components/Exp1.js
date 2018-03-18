@@ -4,7 +4,7 @@ import { Card, Icon, Feed } from 'semantic-ui-react';
 const Exp1 = () => {
     return (
         <Card>
-    <Card.Content>
+    <Card.Content textAlign='center'>
       <Card.Header>Full-Stack Web Developer</Card.Header>
     </Card.Content>
     <Card.Content>

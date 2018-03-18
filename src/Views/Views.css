@@ -5,3 +5,16 @@
 .label-segment {
     padding: 8px !important;
 }
+
+.navbar a {
+    color: #fff !important;
+}
+
+.head {
+    font-size: 2rem;
+}
+
+.sidebar hover {
+    background-color: rgba(0,0,0,.05) !important;
+}
+

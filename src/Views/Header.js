@@ -1,11 +1,11 @@
 import React from 'react';
-import { Header, Grid, Image, Divider, Segment } from 'semantic-ui-react';
+import { Header, Grid, Image, Segment, Button, Icon } from 'semantic-ui-react';
 import { animateScroll as scroll } from 'react-scroll';
 import ProPic from '../Images/ren_panda.jpg';
 import Navbar from '../Components/Navbar';
 import Sidebar from '../Components/sidebar';
 
-
+import './Views.css'
 
 class MyHeader extends React.Component {
 
@@ -27,9 +27,16 @@ class MyHeader extends React.Component {
                             </Grid.Column>
                             <Grid.Column>
                                 <Header as='h1' icon textAlign='center' >
-                                <a onClick={this.scrollToTop}>Ren Jing</a>
+                                    <Button animated='fade' inverted size='large'>
+                                        <a onClick={this.scrollToTop}>
+                                        <Button.Content visible className='head'>Ren Jing</Button.Content>
+                                        <Button.Content hidden>
+                                            <Icon name='home' size='small' />
+                                        </Button.Content>
+                                        </a>
+                                    </Button>
                                 </Header>                                
-                                <Divider section />
+                               
                                 <Header as='h2' icon textAlign='center' >
                                     <Navbar />
                                 </Header> 

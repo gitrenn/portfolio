@@ -1,6 +1,7 @@
 import React from 'react'
 import { Dropdown } from 'semantic-ui-react'
 import { Link, animateScroll as scroll } from 'react-scroll';
+import '../Views/Views.css';
 
 class Sidebar extends React.Component {
   constructor(props){
@@ -15,7 +16,7 @@ class Sidebar extends React.Component {
   render(){
     return(
         <Dropdown icon='content' floating button labeled color='blue' closeOnChange>
-          <Dropdown.Menu >
+          <Dropdown.Menu className='sidebar'>
               <a onClick={this.scrollToTop}>
                 <Dropdown.Header icon='user circle' content='Ren Jing' />
               </a>
