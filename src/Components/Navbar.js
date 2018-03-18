@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Menu, Button, Icon } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import { Link, animateScroll as scroll } from 'react-scroll';
+import '../Views/Views.css';
 
 export default class MenuExampleStackable extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.scrollToTop = this.scrollToTop.bind(this);
@@ -17,50 +18,35 @@ export default class MenuExampleStackable extends Component {
   render() {
 
     return (
-      <Menu secondary>
-        <Menu.Item className='about'>
-          <a onClick={this.scrollToTop}>
-            <Button animated='fade' primary>
-              <Button.Content visible>RJ</Button.Content>
-              <Button.Content hidden>
-                <Icon name='home' size='mini'/>
-              </Button.Content>
-            </Button>
-          </a>
-        </Menu.Item>
-
-        <Menu.Menu position='right'>
-        <Menu.Item className='about'>
+      <div>
+        <Button.Group size='small' primary className='navbar'>     
+            <Button>
           <Link activeClass="active" to="about" spy={true} smooth={true} offset={-200} duration={500} >
             About
           </Link>
-        </Menu.Item>
-
-        <Menu.Item className='portfolio'>
+          </Button>
+          <Button>
           <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-200} duration={500} >
             Projects
           </Link>
-        </Menu.Item>
-
-        <Menu.Item className='experience'>
+          </Button>
+          <Button>
           <Link activeClass="active" to="experience" spy={true} smooth={true} offset={-210} duration={500} >
             Experience
           </Link>
-        </Menu.Item>
-
-        <Menu.Item className='tech'>
+          </Button>
+          <Button>
           <Link activeClass="active" to="tech" spy={true} smooth={true} offset={-200} duration={500} >
-            Technologies
+            Tech
           </Link>
-        </Menu.Item>
-
-        <Menu.Item className='connect'>
+          </Button>
+          <Button>
           <a onClick={() => scroll.scrollToBottom()}>
             Connect
           </a>
-        </Menu.Item>
-        </Menu.Menu>
-      </Menu>
+          </Button>
+        </Button.Group>      
+      </div>
     )
   }
 }

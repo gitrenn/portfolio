@@ -5,3 +5,11 @@
 .label-segment {
     padding: 8px !important;
 }
+
+.navbar a {
+    color: #fff !important;
+}
+
+.head {
+    font-size: 2rem;
+}
