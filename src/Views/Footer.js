@@ -16,7 +16,7 @@ const Footer = () => {
                 <Grid divided inverted stackable>
                     <Grid.Row>
                         <Grid.Column width={5}>
-                            <Header inverted as='h3' content='Contributors' />
+                            <Header inverted as='h3' content='Connect' />
                             <List size="large" link inverted>
 
                                 <List.Item><a href='https://www.linkedin.com/in/ren-jing-2372b81b/' target='_blank' rel="noopener noreferrer">
@@ -30,6 +30,9 @@ const Footer = () => {
                                 <List.Item><a href='https://github.com/gitrenn' target='_blank' rel="noopener noreferrer">
                                     <Icon name='github' inverted loading>
                                     </Icon>gitrenn</a></List.Item>
+                                <List.Item><a href='mailto:rjingmembers@gmail.com?Subject=Hello%20again' target='_blank' rel="noopener noreferrer">
+                                    <Icon name='mail' inverted>
+                                    </Icon>rjingmembers@gmail.com</a></List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={6}>
