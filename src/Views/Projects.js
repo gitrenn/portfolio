@@ -6,6 +6,7 @@ import codeJob from '../Images/codeJob.png';
 import crystalCollector from '../Images/crystalCollector.png';
 import gifTastic from '../Images/gifTastic.png';
 import giftReview from '../Images/giftReview.png';
+import eat from '../Images/eat.png';
 
 import './Views.css';
 
@@ -71,6 +72,14 @@ export default class Portfolio extends Component {
                                 demo='https://safemoveapp.github.io/code-job-app/'
                                 desc='Locate that code job'
                                 tech='JavaScript, jQuery, Nodejs, HTML, CSS, AJAX, Materialize'/>
+
+                        <ProjectCard 
+                                title='EatSentialSmart'
+                                src={eat}
+                                git='https://github.com/safemoveapp/code-job-app'
+                                demo='https://eatsentialsmart.herokuapp.com/'
+                                desc='Search For Recipe/Restaurant/HowToVideos'
+                                tech='React, Axios, Semantic-UI, Edamam/Zomato/NYT APIs'/>
                     </Card.Group>
                 </Responsive>
             </div>
