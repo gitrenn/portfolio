@@ -19,7 +19,7 @@ const Footer = () => {
                             <Header inverted as='h3' content='Contributors' />
                             <List size="large" link inverted>
 
-                                <List.Item as='a'><a href='https://www.linkedin.com/in/ren-jing-2372b81b/' target='_blank' rel="noopener noreferrer">
+                                <List.Item><a href='https://www.linkedin.com/in/ren-jing-2372b81b/' target='_blank' rel="noopener noreferrer">
                                     <Icon name='linkedin square'>
                                     </Icon>Ren Jing</a></List.Item>
                             </List>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <Grid.Column width={5}>
                             <Header inverted as='h3' content='Contact' />
                             <List size="large" link inverted>
-                                <List.Item as='a'><a href='https://github.com/gitrenn' target='_blank' rel="noopener noreferrer">
+                                <List.Item><a href='https://github.com/gitrenn' target='_blank' rel="noopener noreferrer">
                                     <Icon name='github' inverted loading>
                                     </Icon>gitrenn</a></List.Item>
                             </List>
@@ -35,7 +35,7 @@ const Footer = () => {
                         <Grid.Column width={6}>
                             <Header as='h3' inverted style={{ verticalAlign: "center" }}>© 2018 Ren</Header>
                             <List size="large" link inverted>
-                                <List.Item as='a'><a href='https://reactjs.org/' target='_blank' rel="noopener noreferrer">
+                                <List.Item><a href='https://reactjs.org/' target='_blank' rel="noopener noreferrer">
                                     <Icon name='code' >
                                     </Icon>React</a></List.Item>
                             </List>
