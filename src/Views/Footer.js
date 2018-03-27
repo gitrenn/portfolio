@@ -3,13 +3,6 @@ import { Icon, Segment, List, Container, Grid, Header, Responsive } from 'semant
 
 const Footer = () => {
     return (
-    //   <div style={{background: '#2185d0'}}>
-    //     <Segment vertical textAlign='center'>   
-    //         <a href='https://www.linkedin.com/in/ren-jing-2372b81b/' target="_blank" rel="noopener noreferrer"><Icon name='linkedin'  size='huge' color='grey' inverted/></a>
-    //         <a href='https://github.com/gitrenn' target="_blank" rel="noopener noreferrer"><Icon name='github' size='huge' color='grey' inverted loading/></a>
-    //         <a href="mailto:rjingmembers@gmail.com?Subject=Hello%20again" target="_top" rel="noopener noreferrer"><Icon name='mail' size='huge' color='grey' inverted /></a>
-    //     </Segment>
-    //     </div>
         <Responsive>
         <Segment inverted color='blue' vertical style={{ padding: '2em 0em', marginTop: '4em' }}>
             <Container>
