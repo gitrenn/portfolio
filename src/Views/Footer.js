@@ -23,13 +23,13 @@ const Footer = () => {
                                 <List.Item><a href='https://github.com/gitrenn' target='_blank' rel="noopener noreferrer">
                                     <Icon name='github' inverted loading>
                                     </Icon>gitrenn</a></List.Item>
-                                <List.Item><a href='mailto:rjingmembers@gmail.com?Subject=Hello%20again' target='_blank' rel="noopener noreferrer">
+                                <List.Item><a href='mailto:gitrenn@gmail.com?Subject=Hello%20again' target='_blank' rel="noopener noreferrer">
                                     <Icon name='mail' inverted>
-                                    </Icon>rjingmembers@gmail.com</a></List.Item>
+                                    </Icon>gitrenn@gmail.com</a></List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={6}>
-                            <Header as='h3' inverted style={{ verticalAlign: "center" }}>© 2018 Ren</Header>
+                            <Header as='h3' inverted style={{ verticalAlign: "center" }}> &copy; 2018 Ren Jing</Header>
                             <List size="large" link inverted>
                                 <List.Item><a href='https://reactjs.org/' target='_blank' rel="noopener noreferrer">
                                     <Icon name='code' >
