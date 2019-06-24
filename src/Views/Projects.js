@@ -76,7 +76,7 @@ export default class Portfolio extends Component {
                         <ProjectCard 
                                 title='EatSentialSmart'
                                 src={eat}
-                                git='https://github.com/safemoveapp/code-job-app'
+                                git='https://github.com/eatSentialSmart/eatSentialSmartReact/tree/ren'
                                 demo='https://eatsentialsmart.herokuapp.com/'
                                 desc='Search For Recipe/Restaurant/HowToVideos'
                                 tech='React, Axios, Semantic-UI, Edamam/Zomato/NYT APIs'/>
